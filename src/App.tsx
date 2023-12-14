@@ -10,7 +10,7 @@ export default function App() {
     <Titlebar />
     <div id="editor" className="h-screen flex items-start overflow-hidden bg-primary">
       <SourceProvider>
-        {/* <SectionSidebar /> */}
+        <SectionSidebar />
         <Sidebar /> 
         <CodeArea />
       </SourceProvider>

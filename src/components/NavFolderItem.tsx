@@ -62,7 +62,8 @@ export default function NavFolderItem({ file, active }: Props) {
   return <div className="soure-item">
     <div className={`source-folder ${active ? 'bg-gray-200' : ''} flex items-center gap-2 px-2 py-0.5 text-gray-500 hover:text-gray-400 cursor-pointer`}>
       <i className={`ri-arrow-${unfold ? 'down' : 'right'}-s-line`} onClick={onShow}></i>
-      <i className="ri-folder-fill text-yellow-500"></i>
+      {/* <i className="ri-folder-fill text-white"></i> */}
+      <img src="folder.svg" className="w-3.5"/>
       <div className="source-header flex items-center justify-between w-full group">
         <span onClick={onShow}>{file.name}</span>
         <i onClick={() => setNewFile(true)} className="ri-add-line invisible group-hover:visible"></i>
