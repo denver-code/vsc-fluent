@@ -9,6 +9,7 @@ import image from '../assets/image.png';
 import nodejs from '../assets/nodejs.png';
 import rust from '../assets/rust.png';
 import js from '../assets/js.png';
+import python from '../assets/python.png';
 
 interface Icons {
   [key: string]: string
@@ -34,6 +35,7 @@ const icons: Icons = {
   gitignore: git,
   html: html,
   rs: rust,
+  py: python,
 };
 
 interface IFileIconProps {

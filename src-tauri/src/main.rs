@@ -28,10 +28,14 @@ fn write_file(file_path: &str, content: &str) -> String {
     fc::write_file(file_path, content);
     String::from("OK")
 }
-
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![greet, open_folder, get_file_content, write_file])
+        .invoke_handler(tauri::generate_handler![
+            greet,
+            open_folder,
+            get_file_content,
+            write_file
+        ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }

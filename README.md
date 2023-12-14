@@ -14,6 +14,10 @@ This app has some basic functions such as:
 - showing folder structure
 - file icons
 
+# ToDo:
+- [ ] File saving 
+- [ ] Rewrite readme
+- [ ] Make it looks like VScode
 
 Video tutorial: [https://www.youtube.com/watch?v=LUcUn-_KVXo&t=6962s](https://www.youtube.com/watch?v=LUcUn-_KVXo&t=6962s)
 

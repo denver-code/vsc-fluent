@@ -6,11 +6,14 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "huditor",
-    "version": "0.0.0"
+    "productName": "VS Code - Fluent Edition",
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
+      "globalShortcut": {
+        "all": true
+      },
       "all": true
     },
     "bundle": {
@@ -57,9 +60,12 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "huditor",
+        "focus": true,
+        "title": "VS Code - Fluent Edition",
         "width": 1024,
-        "decorations": false
+        "decorations": false,
+        "minWidth": 1024,
+        "minHeight": 600
       }
     ]
   }
