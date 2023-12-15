@@ -37,7 +37,7 @@ export default function NavFiles({files, visible}: Props) {
       >
         <FileIcon name={file.name} />
         <span>{file.name}</span>
-      </div>
+      </div >
     })}
   </div>
 }

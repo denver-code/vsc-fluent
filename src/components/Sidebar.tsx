@@ -22,7 +22,7 @@ export default function Sidebar() {
     })
   }
 
-  return <aside id="sidebar" className="w-60 shrink-0 bg-sec ml-4 mt-4 mb-10 pb-10 mr-4 rounded-lg " style={{ height: 'calc(100vh - 80px)'}}>
+  return <aside id="sidebar" className="w-60 shrink-0 bg-sec ml-4 mt-4 mb-10 pb-10 mr-4 rounded-lg " style={{ height: 'calc(100vh - 140px)'}}>
     <div className="sidebar-header flex items-center justify-between p-4 py-2.5">
     
      <button className="project-explorer" onClick={loadFile} >
@@ -34,7 +34,7 @@ export default function Sidebar() {
       }</span>   */}
     </div>
     <hr className="border-stone-600 mb-2" />
-    <div className="code-structure">
+    <div className="code-structure"  style={{ height: 'calc(100vh - 195px)'}}>
       <NavFiles visible={true} files={files}/>
     </div>
   </aside>

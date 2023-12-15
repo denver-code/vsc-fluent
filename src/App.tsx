@@ -1,3 +1,4 @@
+import Bottombar from "./components/Bottombar"
 import CodeArea from "./components/CodeArea"
 import SectionSidebar from "./components/SectionSidebar"
 import Sidebar from "./components/Sidebar"
@@ -10,11 +11,13 @@ export default function App() {
     <Titlebar />
     <div id="editor" className="h-screen flex items-start overflow-hidden bg-primary">
       <SourceProvider>
-        <SectionSidebar />
-        <Sidebar /> 
-        <CodeArea />
+          <SectionSidebar />
+          <Sidebar /> 
+          <CodeArea />
+        
       </SourceProvider>
     </div>
+    <Bottombar />
   </div>
 }
 

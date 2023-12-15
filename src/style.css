@@ -41,13 +41,21 @@ body{
   @apply text-gray-200;
   @apply px-2 py-0.5;
 }
-
 #titlebar {
   @apply flex items-center justify-between text-gray-300 pl-2;
   height: 47px;
   background: #1c1c1c;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+}
+
+#bottombar {
+  @apply flex items-center justify-between text-gray-300 pl-2;
+  height: 47px;
+  position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -73,6 +81,7 @@ body{
 
 #editor {
   padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 .project-explorer {

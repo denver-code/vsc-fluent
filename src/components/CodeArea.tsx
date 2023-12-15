@@ -46,7 +46,7 @@ export default function CodeArea() {
         })}
       </div></>}
     {
-      opened.length === 0 && <div className="h-full flex-col flex items-start justify-start pt-40 ">
+      opened.length === 0 && <div className="h-full flex-col flex items-start justify-start pt-32 ">
          <h1 className="text-white text-2xl font-bold">Visual Studio Code - Fluent Reborn Edition</h1>
          <h1 className="text-gray-500 text-xl">Editing Evolved</h1>
           <hr className="border-stone-600 my-4 w-11/12"/>

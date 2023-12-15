@@ -81,7 +81,7 @@ export default function CodeEditor({ id, active}: Props) {
     updateEditorContent(id)
   }, [id])
 
-  return <main className={`w-full  overflow-y-auto mb-6 ${visible}`} style={{ height: 'calc(100vh - 90px)' }}>
+  return <main className={`w-full  overflow-y-auto mb-6 ${visible}`} style={{ height: 'calc(100vh - 160px)' }}>
     <div id={editorId} tabIndex={-1} onKeyUp={(ev) => {
       
       if ((ev.ctrlKey || ev.metaKey) && ev.key === 's') {
@@ -94,7 +94,7 @@ export default function CodeEditor({ id, active}: Props) {
     }}></div>
 
     {/* ToDo: Remove later */}
-    <div className="flex items-center gap-3 p-2 fixed bottom-0 right-0" >
+    <div className="flex items-center gap-3 p-4 fixed bottom-0 right-0" style={{ marginBottom: '65px' }}>
       {!isSaved && <div className="text-white text-sm ">
       <span>Unsaved Changes</span>
     </div>}
